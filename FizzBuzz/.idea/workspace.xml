@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccfb781f-6e3b-4bd8-b0d2-c49a787929ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" afterPath="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FizzBuzz.java" afterPath="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +20,8 @@
           <file leaf-file-name="FizzBuzzTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/FizzBuzzTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+                <state relative-caret-position="544">
+                  <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#342#343#0" expanded="true" />
@@ -49,7 +49,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
-                  <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                  <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -78,8 +78,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
       </list>
     </option>
   </component>
@@ -296,15 +296,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 17m 11s.xml">
-      <configuration name="All in FizzBuzz" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 19m 24s.xml">
-      <configuration name="All in FizzBuzz" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 23m 11s.xml">
-      <configuration name="All in FizzBuzz" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 24m 09s.xml">
       <configuration name="All in FizzBuzz" configurationId="JUnit" />
     </history-entry>
@@ -326,9 +317,18 @@
     <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 29m 11s.xml">
       <configuration name="All in FizzBuzz" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 29m 50s.xml">
+      <configuration name="All in FizzBuzz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 30m 21s.xml">
+      <configuration name="All in FizzBuzz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 30m 43s.xml">
+      <configuration name="All in FizzBuzz" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1154000" />
+    <option name="totallyTimeSpent" value="1209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -436,18 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FizzBuzzTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        <state relative-caret-position="544">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#342#343#0" expanded="true" />
@@ -463,6 +455,14 @@
             <element signature="e#862#863#0" expanded="true" />
             <element signature="e#914#915#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ccfb781f-6e3b-4bd8-b0d2-c49a787929ee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FizzBuzz.java" afterPath="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" afterPath="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +50,8 @@
           <file leaf-file-name="FizzBuzz.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -81,8 +80,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/test/java/FizzBuzzTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FizzBuzz.java" />
       </list>
     </option>
   </component>
@@ -299,9 +298,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 29m 50s.xml">
-      <configuration name="All in FizzBuzz" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 30m 21s.xml">
       <configuration name="All in FizzBuzz" configurationId="JUnit" />
     </history-entry>
@@ -329,9 +325,12 @@
     <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 34m 55s.xml">
       <configuration name="All in FizzBuzz" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_FizzBuzz - 2017.08.31 at 00h 35m 26s.xml">
+      <configuration name="All in FizzBuzz" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1460000" />
+    <option name="totallyTimeSpent" value="1491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -441,14 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FizzBuzzTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
@@ -470,6 +461,14 @@
             <element signature="e#989#990#0" expanded="true" />
             <element signature="e#1049#1050#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FizzBuzz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

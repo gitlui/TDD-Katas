@@ -1,6 +1,9 @@
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
+
 public class FizzBuzz {
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";
+    public static final String FIZZBUZZ = FIZZ + BUZZ;
 
     public String of(int input) {
         if (input > 0) {

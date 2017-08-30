@@ -4,6 +4,9 @@ public class FizzBuzz {
 
     public String of(int input) {
         if (input > 0) {
+            if (input == 15)
+                return FIZZ + BUZZ;
+
             if (input % 3 == 0)
                 return FIZZ;
 

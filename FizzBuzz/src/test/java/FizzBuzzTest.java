@@ -16,4 +16,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("0", fizzBuzz.of(0));
     }
+
+    @Test
+    public void itReturnsAOneStringForAOne() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("1", fizzBuzz.of(1));
+    }
 }

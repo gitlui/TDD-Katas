@@ -1,6 +1,6 @@
 public class FizzBuzz {
 
     public String of(int input) {
-        return "0";
+        return String.valueOf(input);
     }
 }

@@ -6,8 +6,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class FizzBuzzTest {
 
-    private final String FIZZ = "Fizz";
-    private final String BUZZ = "Buzz";
+
     private FizzBuzz fizzBuzz;
 
     @Before
@@ -32,21 +31,21 @@ public class FizzBuzzTest {
 
     @Test
     public void itReturnsAFizzForAThree() {
-        assertEquals(FIZZ, fizzBuzz.of(3));
+        assertEquals(FizzBuzz.FIZZ, fizzBuzz.of(3));
     }
 
     @Test
     public void itReturnsABuzzForAFive() {
-        assertEquals(BUZZ, fizzBuzz.of(5));
+        assertEquals(FizzBuzz.BUZZ, fizzBuzz.of(5));
     }
 
     @Test
     public void itReturnsFizzForASix() {
-        assertEquals(FIZZ, fizzBuzz.of(6));
+        assertEquals(FizzBuzz.FIZZ, fizzBuzz.of(6));
     }
 
     @Test
     public void itReturnsABuzzForATen() {
-        assertEquals(BUZZ, fizzBuzz.of(10));
+        assertEquals(FizzBuzz.BUZZ, fizzBuzz.of(10));
     }
 }

@@ -27,4 +27,9 @@ public class FizzBuzzTest {
     public void itReturnsAOneStringForAOne() {
         assertEquals("1", fizzBuzz.of(1));
     }
+
+    @Test
+    public void itReturnsAFizzForAThree() {
+        assertEquals("Fizz", fizzBuzz.of(3));
+    }
 }

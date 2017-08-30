@@ -8,7 +8,7 @@ public class FizzBuzz {
     public String of(int input) {
         if (input > 0) {
             if (input % 15 == 0)
-                return FIZZ + BUZZ;
+                return FIZZBUZZ;
 
             if (input % 3 == 0)
                 return FIZZ;

@@ -53,4 +53,9 @@ public class FizzBuzzTest {
     public void itReturnsFizzBuzzForFifteen() {
         assertEquals(FizzBuzz.FIZZ + FizzBuzz.BUZZ, fizzBuzz.of(15));
     }
+
+    @Test
+    public void itReturnsFizzBuzzFor30() {
+        assertEquals(FizzBuzz.FIZZ + FizzBuzz.BUZZ, fizzBuzz.of(30));
+    }
 }

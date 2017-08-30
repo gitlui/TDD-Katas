@@ -32,4 +32,9 @@ public class FizzBuzzTest {
     public void itReturnsAFizzForAThree() {
         assertEquals("Fizz", fizzBuzz.of(3));
     }
+
+    @Test
+    public void itReturnsABuzzForAFive() {
+        assertEquals("Buzz", fizzBuzz.of(5));
+    }
 }

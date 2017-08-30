@@ -37,4 +37,9 @@ public class FizzBuzzTest {
     public void itReturnsABuzzForAFive() {
         assertEquals("Buzz", fizzBuzz.of(5));
     }
+
+    @Test
+    public void itReturnsFizzForASix() {
+        assertEquals("Fizz", fizzBuzz.of(6));
+    }
 }

@@ -13,6 +13,7 @@ public class RomanNumerals {
 
         numerals.put(10, "X");
         numerals.put(5, "V");
+        numerals.put(1, "I");
 
         return numerals;
     }
@@ -26,7 +27,7 @@ public class RomanNumerals {
             return numerals.get(number);
 
         if (number == 1)
-            return "I";
+            return numerals.get(number);
 
         return "";
     }

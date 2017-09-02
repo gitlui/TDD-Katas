@@ -23,15 +23,6 @@ public class RomanNumerals {
         if (number > 0)
             return numerals.get(number);
 
-        if (number == 10)
-            return numerals.get(number);
-
-        if (number == 5)
-            return numerals.get(number);
-
-        if (number == 1)
-            return numerals.get(number);
-
         return "";
     }
 

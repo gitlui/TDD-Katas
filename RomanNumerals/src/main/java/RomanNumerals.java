@@ -20,6 +20,9 @@ public class RomanNumerals {
 
 
     public String of(int number) {
+        if (number > 0)
+            return numerals.get(number);
+
         if (number == 10)
             return numerals.get(number);
 

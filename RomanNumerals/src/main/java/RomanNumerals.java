@@ -28,11 +28,14 @@ public class RomanNumerals {
         return numerals;
     }
 
-
     public String of(int number) {
-        if (number > 0)
-            return numerals.get(number);
+        String asRoman = "";
 
-        return "";
+        if (number == 2)
+            asRoman = numerals.get(1) + numerals.get(1);
+        else if (number > 0)
+            asRoman = numerals.get(number);
+
+        return asRoman;
     }
 }

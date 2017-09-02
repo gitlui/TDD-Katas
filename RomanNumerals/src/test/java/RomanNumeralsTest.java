@@ -32,4 +32,9 @@ public class RomanNumeralsTest {
     public void itReturnsVfor5() {
         assertEquals("V", romanNumerals.of(5));
     }
+
+    @Test
+    public void itReturnsXfor10() {
+        assertEquals("X", romanNumerals.of(10));
+    }
 }

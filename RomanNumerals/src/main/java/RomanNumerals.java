@@ -14,6 +14,7 @@ public class RomanNumerals {
         numerals.put(1000, "M");
         numerals.put(500, "D");
         numerals.put(100, "C");
+        numerals.put(90, "XC");
         numerals.put(50, "L");
         numerals.put(40, "XL");
         numerals.put(10, "X");

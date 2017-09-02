@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class RomanNumerals {
 
@@ -30,7 +33,18 @@ public class RomanNumerals {
 
     public String of(int number) {
         String asRoman = "";
-        
+
+        List<Integer> numeralUnits = new ArrayList<Integer>(numerals.keySet());
+        Collections.sort(numeralUnits);
+        Collections.reverse(numeralUnits);
+
+        for (int numeralUnit : numeralUnits) {
+            while (number > 0 && numeralUnit <= number) {
+                asRoman += numerals.get(numeralUnit);
+                number -= numeralUnit;
+            }
+        }
+
         if (number < 9 && number > 4) {
             asRoman += numerals.get(5);
             number -= 5;

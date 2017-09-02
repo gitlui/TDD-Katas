@@ -92,4 +92,9 @@ public class RomanNumeralsTest {
     public void itReturnsIIFor2() {
         assertEquals("II", romanNumerals.of(2));
     }
+
+    @Test
+    public void itReturnsIIIFor3() {
+        assertEquals("III", romanNumerals.of(3));
+    }
 }

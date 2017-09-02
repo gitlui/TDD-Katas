@@ -102,4 +102,19 @@ public class RomanNumeralsTest {
     public void itReturnsVIFor6() {
         assertEquals("VI", romanNumerals.of(6));
     }
+
+    @Test
+    public void acceptance_itReturnsMCMLXXXVIIIFor1988() {
+        assertEquals("MCMLXXXVIII", romanNumerals.of(1988));
+    }
+
+    @Test
+    public void acceptance_itReturnsMCMXCIXFor1999() {
+        assertEquals("MCMXCIX", romanNumerals.of(1999));
+    }
+
+    @Test
+    public void acceptance_itReturnsMMVIIIFor2008() {
+        assertEquals("MMVIII", romanNumerals.of(2008));
+    }
 }

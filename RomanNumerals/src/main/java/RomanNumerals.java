@@ -31,9 +31,12 @@ public class RomanNumerals {
     public String of(int number) {
         String asRoman = "";
 
-        if (number == 2)
-            asRoman = numerals.get(1) + numerals.get(1);
-        else if (number > 0)
+        if (number < 4) {
+            while (number > 0) {
+                asRoman += numerals.get(1);
+                number--;
+            }
+        } else if (number > 0)
             asRoman = numerals.get(number);
 
         return asRoman;

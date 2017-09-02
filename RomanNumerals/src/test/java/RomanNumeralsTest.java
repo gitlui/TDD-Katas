@@ -82,4 +82,9 @@ public class RomanNumeralsTest {
     public void itReturnsCDFor400() {
         assertEquals("CD", romanNumerals.of(400));
     }
+
+    @Test
+    public void itReturnsCMfor900() {
+        assertEquals("CM", romanNumerals.of(900));
+    }
 }

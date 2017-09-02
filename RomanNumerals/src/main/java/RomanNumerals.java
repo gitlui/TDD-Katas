@@ -17,6 +17,7 @@ public class RomanNumerals {
         numerals.put(50, "L");
         numerals.put(10, "X");
         numerals.put(5, "V");
+        numerals.put(4, "IV");
         numerals.put(1, "I");
 
         return numerals;

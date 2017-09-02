@@ -12,6 +12,7 @@ public class RomanNumerals {
         HashMap<Integer, String> numerals = new HashMap<Integer, String>();
 
         numerals.put(10, "X");
+        numerals.put(5, "V");
 
         return numerals;
     }
@@ -22,7 +23,7 @@ public class RomanNumerals {
             return numerals.get(number);
 
         if (number == 5)
-            return "V";
+            return numerals.get(number);
 
         if (number == 1)
             return "I";

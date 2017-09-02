@@ -29,37 +29,37 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void itReturnsVfor5() {
+    public void itReturnsVFor5() {
         assertEquals("V", romanNumerals.of(5));
     }
 
     @Test
-    public void itReturnsXfor10() {
+    public void itReturnsXFor10() {
         assertEquals("X", romanNumerals.of(10));
     }
 
     @Test
-    public void itReturnsLfor50() {
+    public void itReturnsLFor50() {
         assertEquals("L", romanNumerals.of(50));
     }
 
     @Test
-    public void itReturnsCfor100() {
+    public void itReturnsCFor100() {
         assertEquals("C", romanNumerals.of(100));
     }
 
     @Test
-    public void itReturnsDfor500() {
+    public void itReturnsDFor500() {
         assertEquals("D", romanNumerals.of(500));
     }
 
     @Test
-    public void itReturnsMfor1000() {
+    public void itReturnsMFor1000() {
         assertEquals("M", romanNumerals.of(1000));
     }
 
     @Test
-    public void itReturnsIVfor4() {
+    public void itReturnsIVFor4() {
         assertEquals("IV", romanNumerals.of(4));
     }
 

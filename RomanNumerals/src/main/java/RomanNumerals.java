@@ -41,13 +41,13 @@ public class RomanNumerals {
     }
 
     public String of(int number) {
-        String asRoman = "";
+        StringBuilder asRoman = new StringBuilder();
 
         List<Integer> numeralUnits = orderedNumeralUnitsFromBiggestToLowest();
         for (int numeralUnit : numeralUnits)
             for (; number > 0 && numeralUnit <= number; number -= numeralUnit)
-                asRoman += numerals.get(numeralUnit);
+                asRoman.append(numerals.get(numeralUnit));
 
-        return asRoman;
+        return asRoman.toString();
     }
 }

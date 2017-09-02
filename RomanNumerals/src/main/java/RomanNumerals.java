@@ -33,13 +33,17 @@ public class RomanNumerals {
         numerals.put(1, "I");
     }
 
-    public String of(int number) {
-        String asRoman = "";
-
+    private List<Integer> orderedNumeralUnitsFromBiggestToLowest() {
         List<Integer> numeralUnits = new ArrayList<Integer>(numerals.keySet());
         Collections.sort(numeralUnits);
         Collections.reverse(numeralUnits);
+        return numeralUnits;
+    }
 
+    public String of(int number) {
+        String asRoman = "";
+
+        List<Integer> numeralUnits = orderedNumeralUnitsFromBiggestToLowest();
         for (int numeralUnit : numeralUnits) {
             while (number > 0 && numeralUnit <= number) {
                 asRoman += numerals.get(numeralUnit);
@@ -49,4 +53,5 @@ public class RomanNumerals {
 
         return asRoman;
     }
+
 }

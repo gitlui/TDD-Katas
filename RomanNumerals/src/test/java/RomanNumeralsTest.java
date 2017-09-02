@@ -19,17 +19,17 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void aZeroReturnsAEmptyString() {
+    public void itReturnsAEmptyStringFor0() {
         assertEquals("", romanNumerals.of(0));
     }
 
     @Test
-    public void aOneReturnsI() {
+    public void itReturnsIFor1() {
         assertEquals("I", romanNumerals.of(1));
     }
 
     @Test
-    public void aFiveReturnsV() {
+    public void itReturnsVfor5() {
         assertEquals("V", romanNumerals.of(5));
     }
 }

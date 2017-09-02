@@ -44,14 +44,10 @@ public class RomanNumerals {
         String asRoman = "";
 
         List<Integer> numeralUnits = orderedNumeralUnitsFromBiggestToLowest();
-        for (int numeralUnit : numeralUnits) {
-            while (number > 0 && numeralUnit <= number) {
+        for (int numeralUnit : numeralUnits)
+            for (; number > 0 && numeralUnit <= number; number -= numeralUnit)
                 asRoman += numerals.get(numeralUnit);
-                number -= numeralUnit;
-            }
-        }
 
         return asRoman;
     }
-
 }

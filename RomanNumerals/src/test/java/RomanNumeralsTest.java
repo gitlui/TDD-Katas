@@ -28,4 +28,8 @@ public class RomanNumeralsTest {
         assertEquals("I", romanNumerals.of(1));
     }
 
+    @Test
+    public void aFiveReturnsV() {
+        assertEquals("V", romanNumerals.of(5));
+    }
 }

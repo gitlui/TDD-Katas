@@ -11,6 +11,7 @@ public class RomanNumerals {
     private HashMap<Integer, String> initializeNumerals() {
         HashMap<Integer, String> numerals = new HashMap<Integer, String>();
 
+        numerals.put(50, "L");
         numerals.put(10, "X");
         numerals.put(5, "V");
         numerals.put(1, "I");

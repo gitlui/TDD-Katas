@@ -45,19 +45,6 @@ public class RomanNumerals {
             }
         }
 
-        if (number < 9 && number > 4) {
-            asRoman += numerals.get(5);
-            number -= 5;
-        }
-
-        if (number < 4) {
-            while (number > 0) {
-                asRoman += numerals.get(1);
-                number--;
-            }
-        } else if (number > 0)
-            asRoman = numerals.get(number);
-
         return asRoman;
     }
 }

@@ -10,13 +10,16 @@ public class RomanNumerals {
 
     private HashMap<Integer, String> initializeNumerals() {
         HashMap<Integer, String> numerals = new HashMap<Integer, String>();
+
+        numerals.put(10, "X");
+
         return numerals;
     }
 
 
     public String of(int number) {
         if (number == 10)
-            return "X";
+            return numerals.get(number);
 
         if (number == 5)
             return "V";

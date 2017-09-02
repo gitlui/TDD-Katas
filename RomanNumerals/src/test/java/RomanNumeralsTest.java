@@ -67,4 +67,9 @@ public class RomanNumeralsTest {
     public void itReturnsIXFor9() {
         assertEquals("IX", romanNumerals.of(9));
     }
+
+    @Test
+    public void itReturnsXLFor40() {
+        assertEquals("XL", romanNumerals.of(40));
+    }
 }

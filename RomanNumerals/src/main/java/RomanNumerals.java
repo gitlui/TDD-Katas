@@ -13,7 +13,11 @@ public class RomanNumerals {
 
     private HashMap<Integer, String> initializeNumerals() {
         HashMap<Integer, String> numerals = new HashMap<Integer, String>();
+        fillNumeralUnitsInto(numerals);
+        return numerals;
+    }
 
+    private void fillNumeralUnitsInto(HashMap<Integer, String> numerals) {
         numerals.put(1000, "M");
         numerals.put(900, "CM");
         numerals.put(500, "D");
@@ -27,8 +31,6 @@ public class RomanNumerals {
         numerals.put(5, "V");
         numerals.put(4, "IV");
         numerals.put(1, "I");
-
-        return numerals;
     }
 
     public String of(int number) {

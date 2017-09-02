@@ -30,6 +30,11 @@ public class RomanNumerals {
 
     public String of(int number) {
         String asRoman = "";
+        
+        if (number < 9 && number > 4) {
+            asRoman += numerals.get(5);
+            number -= 5;
+        }
 
         if (number < 4) {
             while (number > 0) {

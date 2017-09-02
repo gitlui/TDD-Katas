@@ -47,4 +47,9 @@ public class RomanNumeralsTest {
     public void itReturnsCfor100() {
         assertEquals("C", romanNumerals.of(100));
     }
+
+    @Test
+    public void itReturnsDfor500() {
+        assertEquals("D", romanNumerals.of(500));
+    }
 }

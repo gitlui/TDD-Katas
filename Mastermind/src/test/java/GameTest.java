@@ -9,6 +9,7 @@ import static org.junit.Assert.assertNull;
 public class GameTest {
 
     private Game game;
+    private final PegColour[] testCode = new PegColour[]{PegColour.BLUE, PegColour.BLUE, PegColour.BLUE, PegColour.BLUE};
 
     @Before
     public void setUp() throws Exception {
@@ -32,7 +33,6 @@ public class GameTest {
 
     @Test
     public void itTakesACodeOnce() {
-        PegColour[] testCode = new PegColour[]{PegColour.BLUE, PegColour.BLUE, PegColour.BLUE, PegColour.BLUE};
         game.startGameWithCode(testCode);
         assertNotNull(game.currentCodeToCrack());
     }
@@ -47,8 +47,7 @@ public class GameTest {
     @Test
     @Ignore
     public void itAllowsForATry() {
-        GameMaster gm = new GameMaster();
-        game.startGameWithCode(gm.generateCode());
+        game.startGameWithCode(testCode);
         assertNotNull(game.tryCode(new PegColour[4]));
     }
 }

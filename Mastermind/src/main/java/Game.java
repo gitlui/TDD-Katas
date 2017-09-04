@@ -1,6 +1,8 @@
 public class Game {
+    private PegColour[] code;
+
     public Object currentCodeToCrack() {
-        return null;
+        return code;
     }
 
     public int currentRound() {
@@ -8,6 +10,6 @@ public class Game {
     }
 
     public void startGameWithCode(PegColour[] code) {
-        
+        this.code = code;
     }
 }

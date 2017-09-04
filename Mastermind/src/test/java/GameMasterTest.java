@@ -7,4 +7,10 @@ public class GameMasterTest {
     public void itCanBeCreated() {
         assertNotNull(new GameMaster());
     }
+
+    @Test
+    public void itCanGenerateACode() {
+        GameMaster gm = new GameMaster();
+        assertNotNull(gm.generateCode());
+    }
 }

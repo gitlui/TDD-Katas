@@ -1,3 +1,3 @@
 public enum PegColour {
-    BLUE
+    GREEN, RED, PURPLE, YELLOW, BLUE
 }

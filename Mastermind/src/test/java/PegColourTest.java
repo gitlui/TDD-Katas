@@ -12,4 +12,19 @@ public class PegColourTest {
     public void itCanBeGreen() {
         assertNotNull(PegColour.GREEN);
     }
+
+    @Test
+    public void itCanBeRed() {
+        assertNotNull(PegColour.RED);
+    }
+
+    @Test
+    public void itCanBePurple() {
+        assertNotNull(PegColour.PURPLE);
+    }
+
+    @Test
+    public void itCanBeYellow() {
+        assertNotNull(PegColour.YELLOW);
+    }
 }

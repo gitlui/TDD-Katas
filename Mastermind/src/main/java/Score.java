@@ -1,8 +1,10 @@
 public class Score {
     private final int whiteCount;
+    private final int blackCount;
 
     public Score(int whiteCount, int blackCount) {
         this.whiteCount = whiteCount;
+        this.blackCount = blackCount;
     }
 
     public int whiteCount() {
@@ -10,6 +12,6 @@ public class Score {
     }
 
     public int blackCount() {
-        return 0;
+        return blackCount;
     }
 }

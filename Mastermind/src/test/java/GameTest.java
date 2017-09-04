@@ -37,4 +37,12 @@ public class GameTest {
         game.startGameWithCode(gm.generateCode());
         assertEquals(1, game.currentRound());
     }
+
+    @Test
+    public void itAllowsForATry() {
+        Game game = new Game();
+        GameMaster gm = new GameMaster();
+        game.startGameWithCode(gm.generateCode());
+        assertNotNull(game.tryCode(new PegColour[4]));
+    }
 }

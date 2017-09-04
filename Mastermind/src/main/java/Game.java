@@ -14,4 +14,8 @@ public class Game {
         this.code = code;
         this.currentRound = 1;
     }
+
+    public Object tryCode(PegColour[] codeToTry) {
+        return null;
+    }
 }

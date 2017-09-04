@@ -21,4 +21,12 @@ public class GameTest {
         Game game = new Game();
         assertEquals(0, game.currentRound());
     }
+
+    @Test
+    public void itTakesACodeOnce() {
+        Game game = new Game();
+        GameMaster gm = new GameMaster();
+        game.startGameWithCode(gm.generateCode());
+        assertNotNull(game.currentCodeToCrack());
+    }
 }

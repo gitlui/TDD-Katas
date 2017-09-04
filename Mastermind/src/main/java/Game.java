@@ -6,4 +6,8 @@ public class Game {
     public int currentRound() {
         return 0;
     }
+
+    public void startGameWithCode(PegColour[] code) {
+        
+    }
 }

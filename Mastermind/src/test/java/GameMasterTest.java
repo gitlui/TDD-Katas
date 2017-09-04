@@ -24,7 +24,6 @@ public class GameMasterTest {
     }
 
     @Test
-    @Ignore
     public void itCanGenerateACodeWhichActuallyContainsPegColours() {
         GameMaster gm = new GameMaster();
         PegColour[] code = gm.generateCode();

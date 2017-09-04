@@ -32,8 +32,8 @@ public class GameTest {
 
     @Test
     public void itTakesACodeOnce() {
-        GameMaster gm = new GameMaster();
-        game.startGameWithCode(gm.generateCode());
+        PegColour[] testCode = new PegColour[]{PegColour.BLUE, PegColour.BLUE, PegColour.BLUE, PegColour.BLUE};
+        game.startGameWithCode(testCode);
         assertNotNull(game.currentCodeToCrack());
     }
 

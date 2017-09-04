@@ -9,7 +9,7 @@ import static org.junit.Assert.assertNull;
 public class GameTest {
 
     private Game game;
-    private final PegColour[] testCode = new PegColour[]{PegColour.BLUE, PegColour.BLUE, PegColour.BLUE, PegColour.BLUE};
+    private final PegColour[] testCode = new PegColour[]{PegColour.BLUE, PegColour.GREEN, PegColour.PURPLE, PegColour.YELLOW};
 
     @Before
     public void setUp() throws Exception {
@@ -48,5 +48,13 @@ public class GameTest {
     public void itAllowsForATry() {
         game.startGameWithCode(testCode);
         assertNotNull(game.tryCode(new PegColour[4]));
+    }
+
+    @Test
+    public void itReturnsAScoreForOneRightColour() {
+        game.startGameWithCode(testCode);
+        PegColour[] codeToTry = {PegColour.GREEN, PegColour.RED, PegColour.RED, PegColour.RED};
+        Score score = game.tryCode(codeToTry);
+        assertEquals(1, score.rightColourCount());
     }
 }

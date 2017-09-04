@@ -1,9 +1,11 @@
 public class Score {
-    public Score(int whiteCount) {
+    private final int whiteCount;
 
+    public Score(int whiteCount) {
+        this.whiteCount = whiteCount;
     }
 
     public int whiteCount() {
-        return 0;
+        return whiteCount;
     }
 }

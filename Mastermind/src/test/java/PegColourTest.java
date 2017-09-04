@@ -8,5 +8,8 @@ public class PegColourTest {
         assertNotNull(PegColour.BLUE);
     }
 
-    
+    @Test
+    public void itCanBeGreen() {
+        assertNotNull(PegColour.GREEN);
+    }
 }

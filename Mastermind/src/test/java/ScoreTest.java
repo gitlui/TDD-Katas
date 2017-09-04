@@ -10,12 +10,12 @@ public class ScoreTest {
     }
 
     @Test
-    public void itGetsTheWhiteCountAtCreationAndReturnsIt() {
-        assertEquals(1, new Score(1, 0).whiteCount());
+    public void itGetsRightColourCountAtCreationAndReturnsIt() {
+        assertEquals(1, new Score(1, 0).rightColourCount());
     }
 
     @Test
-    public void itGetsTheBlackCountAtCreationAndReturnsIt() {
-        assertEquals(1, new Score(0, 1).blackCount());
+    public void itGetsTheRightPositionCountAtCreationAndReturnsIt() {
+        assertEquals(1, new Score(0, 1).rightPositionCount());
     }
 }

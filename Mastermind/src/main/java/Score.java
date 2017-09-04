@@ -1,17 +1,17 @@
 public class Score {
-    private final int whiteCount;
-    private final int blackCount;
+    private final int rightColourCount;
+    private final int rightPositionCount;
 
-    public Score(int whiteCount, int blackCount) {
-        this.whiteCount = whiteCount;
-        this.blackCount = blackCount;
+    public Score(int rightColourCount, int rightPositionCount) {
+        this.rightColourCount = rightColourCount;
+        this.rightPositionCount = rightPositionCount;
     }
 
-    public int whiteCount() {
-        return whiteCount;
+    public int rightColourCount() {
+        return rightColourCount;
     }
 
-    public int blackCount() {
-        return blackCount;
+    public int rightPositionCount() {
+        return rightPositionCount;
     }
 }

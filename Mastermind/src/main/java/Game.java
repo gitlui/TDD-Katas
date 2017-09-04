@@ -4,6 +4,6 @@ public class Game {
     }
 
     public int currentRound() {
-        return -1;
+        return 0;
     }
 }

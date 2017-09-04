@@ -29,4 +29,12 @@ public class GameTest {
         game.startGameWithCode(gm.generateCode());
         assertNotNull(game.currentCodeToCrack());
     }
+
+    @Test
+    public void itChangesToRoundOneAfterStartingTheGameWithACode() {
+        Game game = new Game();
+        GameMaster gm = new GameMaster();
+        game.startGameWithCode(gm.generateCode());
+        assertEquals(1, game.currentRound());
+    }
 }

@@ -33,9 +33,8 @@ public class GameMasterTest {
     @Test
     public void itCanGenerateACodeWhichActuallyContainsPegColours() {
         PegColour[] code = gm.generateCode();
-        assertEquals(PegColour.class, code[0].getClass());
-        assertEquals(PegColour.class, code[1].getClass());
-        assertEquals(PegColour.class, code[2].getClass());
-        assertEquals(PegColour.class, code[3].getClass());
+
+        for (int i = 0; i < code.length; i++)
+            assertEquals(PegColour.class, code[i].getClass());
     }
 }

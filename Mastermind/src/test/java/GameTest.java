@@ -45,7 +45,6 @@ public class GameTest {
     }
 
     @Test
-    @Ignore
     public void itAllowsForATry() {
         game.startGameWithCode(testCode);
         assertNotNull(game.tryCode(new PegColour[4]));

@@ -15,7 +15,7 @@ public class Game {
         this.currentRound = 1;
     }
 
-    public Object tryCode(PegColour[] codeToTry) {
-        return null;
+    public Score tryCode(PegColour[] codeToTry) {
+        return new Score(0, 0);
     }
 }

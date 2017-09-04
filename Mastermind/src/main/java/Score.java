@@ -1,5 +1,9 @@
 public class Score {
-    public Object whiteCount() {
-        return null;
+    public Score(int whiteCount) {
+
+    }
+
+    public int whiteCount() {
+        return 0;
     }
 }

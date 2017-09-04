@@ -51,6 +51,7 @@ public class GameTest {
     }
 
     @Test
+    @Ignore
     public void itReturnsAScoreForOneRightColour() {
         game.startGameWithCode(testCode);
         PegColour[] codeToTry = {PegColour.GREEN, PegColour.RED, PegColour.RED, PegColour.RED};

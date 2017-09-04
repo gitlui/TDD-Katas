@@ -1,5 +1,6 @@
 public class GameMaster {
     public PegColour[] generateCode() {
-        return new PegColour[4];
+        PegColour[] code = new PegColour[4];
+        return code;
     }
 }

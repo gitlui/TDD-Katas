@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -6,26 +7,31 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 public class GameTest {
+
+    private Game game;
+
+    @Before
+    public void setUp() throws Exception {
+        game = new Game();
+    }
+
     @Test
     public void itCanBeCreated() {
-        assertNotNull(new Game());
+        assertNotNull(game);
     }
 
     @Test
     public void itStartsWithoutACode() {
-        Game game = new Game();
         assertNull(game.currentCodeToCrack());
     }
 
     @Test
     public void itStartsAtRoundZero() {
-        Game game = new Game();
         assertEquals(0, game.currentRound());
     }
 
     @Test
     public void itTakesACodeOnce() {
-        Game game = new Game();
         GameMaster gm = new GameMaster();
         game.startGameWithCode(gm.generateCode());
         assertNotNull(game.currentCodeToCrack());
@@ -33,7 +39,6 @@ public class GameTest {
 
     @Test
     public void itChangesToRoundOneAfterStartingTheGameWithACode() {
-        Game game = new Game();
         GameMaster gm = new GameMaster();
         game.startGameWithCode(gm.generateCode());
         assertEquals(1, game.currentRound());
@@ -42,7 +47,6 @@ public class GameTest {
     @Test
     @Ignore
     public void itAllowsForATry() {
-        Game game = new Game();
         GameMaster gm = new GameMaster();
         game.startGameWithCode(gm.generateCode());
         assertNotNull(game.tryCode(new PegColour[4]));

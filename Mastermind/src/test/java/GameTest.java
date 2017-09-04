@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -39,6 +40,7 @@ public class GameTest {
     }
 
     @Test
+    @Ignore
     public void itAllowsForATry() {
         Game game = new Game();
         GameMaster gm = new GameMaster();

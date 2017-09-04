@@ -1,15 +1,17 @@
 public class Game {
     private PegColour[] code;
+    private int currentRound;
 
     public Object currentCodeToCrack() {
         return code;
     }
 
     public int currentRound() {
-        return 0;
+        return currentRound;
     }
 
     public void startGameWithCode(PegColour[] code) {
         this.code = code;
+        this.currentRound = 1;
     }
 }

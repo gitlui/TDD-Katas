@@ -18,23 +18,18 @@ class RulesTest {
     private fun assertDead(wasAlive: Boolean, countOfNeighbours: Int) =
             assertEquals(false, judge.willBeAlive(wasAlive, countOfNeighbours))
 
-    // revive
-    @Test
-    fun ifADeadCellHasExactlyThreeNeighboursItBecomesAlive() = assertAlive(false, 3)
-
-    // Ha ha ha ha... staying alive staying alive...
     @Test
     fun ifALivingCellHasExactlyTwoNeighboursItStaysAlive() = assertAlive(true, 2)
     @Test
     fun ifALivingCellHasExactlyThreeNeighboursItStaysAlive() = assertAlive(true, 3)
 
-    // loneliness
     @Test
     fun ifALivingCellHasZeroNeighboursItDies() = assertDead(true, 0)
     @Test
     fun ifALivingCellHasOnlyOneNeighbourItDies() = assertDead(true, 1)
-
-    // to much to handle
     @Test
-    fun ifALivingCellHasMoreThanThreeNeighboursItDies() = assertDead(false, 4)
+    fun ifALivingCellHasMoreThanThreeNeighboursItDies() = assertDead(true, 4)
+
+    @Test
+    fun ifADeadCellHasExactlyThreeNeighboursItBecomesAlive() = assertAlive(false, 3)
 }
